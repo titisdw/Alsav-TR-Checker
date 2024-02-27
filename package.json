@@ -47,10 +47,10 @@
     "url": "https://github.com/titisdw/Alsav-TR-Checker"
   },
   "build": {
-    "appId": "Traffic Checker",
-    "productName": "Traffic Checker",
+    "appId": "Alsav Traffic Checker",
+    "productName": "Alsav Traffic Checker",
     "compression": "maximum",
-    "copyright": "Copyrights 2024 Titis",
+    "copyright": "Copyrights 2024 AlsavSystem",
     "publish": {
       "provider": "github",
       "owner": "titisdw",
