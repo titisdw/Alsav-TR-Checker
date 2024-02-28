@@ -92,7 +92,27 @@
       "node_modules/b4a",
       "node_modules/pump",
       "node_modules/once",
-      "node_modules/wrappy"
+      "node_modules/wrappy",
+      "node_modules/end-of-stream",
+      "node_modules/mkdirp-classic",
+      "node_modules/combined-stream",
+      "node_modules/delayed-stream",
+      "node_modules/mime-types",
+      "node_modules/mime-db",
+      "node_modules/asynckit",
+      "node_modules/d",
+      "node_modules/type",
+      "node_modules/es5-ext",
+      "node_modules/memoizee",
+      "node_modules/event-emitter",
+      "node_modules/es6-symbol",
+      "node_modules/ext",
+      "node_modules/timers-ext",
+      "node_modules/es6-iterator",
+      "node_modules/debug",
+      "node_modules/ms",
+      "node_modules/deepmerge",
+      "src/main.js"
     ]
   }
 }
