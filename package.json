@@ -60,6 +60,7 @@
     "win": {
       "target": "nsis"
     },
+    "icon": "src/assets/logo.png",
     "nsis": {
       "oneClick": false,
       "perMachine": false,
