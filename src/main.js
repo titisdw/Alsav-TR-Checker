@@ -10,9 +10,9 @@ async function delay(seconds) {
 let stops = false;
 
 const proccess = async (log, proggress, logToTable, data) => {
-  const { connect } = await import("puppeteer-real-browser");
+  var { connect } = await import('puppeteer-real-browser')
   const { page, browser } = await connect({
-    headless: false,
+    headless: 'false',
   });
 
   try {
