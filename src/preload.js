@@ -128,7 +128,7 @@ function logToTable(url, hasil) {
             initNumb++;
             const newRow = table.insertRow();
             const rowHtml = `<tr>
-            <th scope="row"><center>${initNumb}</center></th>
+            <th class="text-center" scope="row">${initNumb}</th>
             <td>${url}</td>
             <td>${hasil.organicTraffic}</td>
           </tr>`;

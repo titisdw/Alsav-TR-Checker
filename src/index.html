@@ -12,13 +12,13 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: #2E3C56;">
   <div id="warp" class="overlay mx-auto px-lg-4 px-md-4 hidden">
     <div class="col-lg-4 col-md-6 col-sm-3" id="notification">
       <p id="message" class="mb-2"></p>
       <div id="warp-loader" class="mb-2 hidden">
         <div class="progress bg-secondary rounded overflow-hidden">
-          <div id="download-progress" class="progress-bar bg-success" role="progressbar" style="width: 0%"
+          <div id="download-progress" class="progress-bar bg-warning" role="progressbar" style="width: 0%"
             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
       </div>
@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <header class="bg-success sticky-top">
+  <header class="sticky-top" style="background-color: #FF8800;">
     <nav class="container py-3 px-4">
       <h3 class="text-white mt-1">Alsav Traffic Checker <span id="version"></span></h3>
     </nav>
@@ -39,7 +39,7 @@
       <div class="row">
         <div class="col-lg-4">
           <div class="w-100 mb-3">
-            <label for="files" class="form-label">File Data</label>
+            <label for="files" class="form-label">File Website</label>
             <input class="form-control" type="file" id="files" accept=".txt">
           </div>
 
@@ -52,7 +52,7 @@
           </div>
           <div class="progress mb-3" role="progressbar" aria-label="Proggress" aria-valuenow="0" aria-valuemin="0"
             aria-valuemax="100">
-            <div id="prog" class="progress-bar bg-success" style="width: 0%">0%</div>
+            <div id="prog" class="progress-bar bg-warning" style="width: 0%">0%</div>
           </div>
 
           <div class="d-flex gap-2 mb-3">
@@ -63,13 +63,13 @@
 
           <textarea id="log" style="font-size: 14px;" readonly class="form-control mt-3 hidden" rows="10"></textarea>
         </div>
-        <div id="scrl" class="col-lg-8 mt-md-4 table-responsive" style="height: 400px;">
+        <div id="scrl" class="col-lg-8 mt-md-4 p-0 table-responsive" style="height: 452px; background-color: #FFFFFF;">
           <table class="table table-bordered">
             <thead class="table-success sticky-top">
               <tr class="text-center">
                 <th class="fw-semibold" scope="col">No</th>
-                <th class="fw-semibold" scope="col">URL</th>
-                <th class="fw-semibold" scope="col">Organic Traffic</th>
+                <th class="fw-semibold" scope="col">Website</th>
+                <th class="fw-semibold" scope="col">Ahrefs Organic Traffic</th>
               </tr>
             </thead>
             <tbody id="table-data">

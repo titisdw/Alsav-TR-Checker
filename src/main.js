@@ -1,7 +1,6 @@
 const fs = require("fs");
 const puppeteer = require("puppeteer-extra");
 const stealthPlugin = require("puppeteer-extra-plugin-stealth");
-// const userAgents = require("user-agents");
 puppeteer.use(stealthPlugin());
 
 async function delay(seconds) {
@@ -11,12 +10,10 @@ async function delay(seconds) {
 let stops = false;
 
 const proccess = async (log, proggress, logToTable, data) => {
-  const { puppeteerRealBrowser } = await import("puppeteer-real-browser");
-  const { page, browser } = await puppeteerRealBrowser({
+  const { connect } = await import("puppeteer-real-browser");
+  const { page, browser } = await connect({
     headless: false,
   });
-
-  // await page.setUserAgent(new userAgents().random().toString());
 
   try {
     await page.goto("https://ahrefs.com/traffic-checker", {
@@ -88,21 +85,6 @@ const core = async (page, url, log, logToTable) => {
       await input.evaluate((e) => (e.value = ""))
       await core(page,url,log,logToTable)
     }
-
-    // const elBacklink = await page.waitForSelector(
-    //   "body > div.ReactModalPortal > div > div > div.css-1ksodfu-modalWrapper.css-qf13ee-modalWrapperWithFooter > div > div.css-15bix8f-statsSection > div.css-aa83t0-linkingWebsites > div > div > div.css-1gq2z3w > div > div > div > span",
-    //   {
-    //     waitUntil: ["networkidle2", "domcontentloaded"],
-    //     timeout: 120000,
-    //   }
-    // );
-    // const elLink = await page.waitForSelector(
-    //   "body > div.ReactModalPortal > div > div > div.css-1ksodfu-modalWrapper.css-qf13ee-modalWrapperWithFooter > div > div.css-15bix8f-statsSection > div.css-aa83t0-linkingWebsites > div > div > div.css-1gq2z3w > div > div > div > span",
-    //   {
-    //     waitUntil: ["networkidle2", "domcontentloaded"],
-    //     timeout: 120000,
-    //   }
-    // );
 
     log(`[INFO] GET DATA OF URL : ${url}`);
 
